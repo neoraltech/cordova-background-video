@@ -60,9 +60,9 @@ public class BackgroundVideo extends CordovaPlugin {
                 if (!cordova.hasPermission(android.Manifest.permission.CAMERA)) {
                     permissions.add(android.Manifest.permission.CAMERA);
                 }
-                if (!cordova.hasPermission(android.Manifest.permission.RECORD_AUDIO)) {
-                    permissions.add(android.Manifest.permission.RECORD_AUDIO);
-                }
+                //if (!cordova.hasPermission(android.Manifest.permission.RECORD_AUDIO)) {
+                //    permissions.add(android.Manifest.permission.RECORD_AUDIO);
+                //}
                 if (permissions.size() > 0) {
                     cordova.requestPermissions(this, START_REQUEST_CODE, permissions.toArray(new String[0]));
                     return true;
